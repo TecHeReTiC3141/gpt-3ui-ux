@@ -1,7 +1,20 @@
-import "./feature.css";
+import './feature.css';
 
-export default function Feature() {
+interface FeatureProps {
+    title: string;
+    text: string;
+}
+
+export default function Feature({title, text}: FeatureProps) {
     return (
-        <>Feature</>
+        <div className="gpt3__features-container__feature">
+            <div className="gpt3__features-container__feature-title">
+                <div />
+                <h1>{title}</h1>
+            </div>
+            <div className="gpt3__features-container__feature-text">
+                <p>{text}</p>
+            </div>
+        </div>
     );
 }
