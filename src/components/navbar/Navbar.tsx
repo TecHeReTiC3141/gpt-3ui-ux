@@ -1,5 +1,5 @@
 import "./navbar.css";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import { useState } from "react";
 
@@ -8,8 +8,8 @@ function LinksMenu() {
         <>
             <p><a href="#home">Home</a></p>
             <p><a href="#wgpt3">What is GPT3?</a></p>
-            <p><a href="#possibility">Open AI</a></p>
-            <p><a href="#features">Case Studies</a></p>
+            <p><a href="#features">Open AI</a></p>
+            <p><a href="#possibility">Case Studies</a></p>
             <p><a href="#blog">Library</a></p>
         </>
     )
@@ -23,9 +23,9 @@ export default function Navbar() {
     return (
         <div className="gpt3__navbar">
             <div className="gpt3__navbar-links">
-                <div className="gpt3__navbar-links_logo">
+                <a href="/" className="gpt3__navbar-links_logo">
                     <img src={logo} alt="Logo"/>
-                </div>
+                </a>
                 <div className="gpt3__navbar-links_container">
                     <LinksMenu />
                 </div>

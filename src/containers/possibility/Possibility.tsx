@@ -3,7 +3,7 @@ import possibilityImage from "../../assets/possibility.png";
 
 export default function Possibility() {
     return (
-        <div className="gpt3__possibility section__padding">
+        <div className="gpt3__possibility section__padding" id="possibility">
             <div className="gpt3__possibility-image">
                 <img src={possibilityImage} alt="Possibility"/>
             </div>
