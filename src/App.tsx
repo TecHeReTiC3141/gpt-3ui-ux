@@ -1,5 +1,5 @@
-import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from "./containers";
-import { CTA, Brand, Navbar } from "./components";
+import { Blog, Features, Footer, Header, Possibility, WhatGPT3 } from "./containers";
+import { Brand, CTA, Navbar } from "./components";
 import "./App.css";
 
 export default function App() {
@@ -14,7 +14,6 @@ export default function App() {
             <Features />
             <Possibility />
             <CTA />
-            <Blog />
             <Blog />
             <Footer />
         </div>
